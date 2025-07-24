@@ -1,0 +1,2 @@
+#!/bin/bash
+gnome-terminal -- bash -c 'v4l2-ctl -d /dev/video0 --set-ctrl=focus_automatic_continuous=0 && v4l2-ctl -d /dev/video0 --set-ctrl=focus_absolute=42 && echo "Focus set to manual mode with value 42" && exec bash' 
